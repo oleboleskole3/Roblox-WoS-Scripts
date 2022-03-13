@@ -1,7 +1,7 @@
 ---@diagnostic disable: undefined-global
 local instrument = GetPartFromPort(3, 'Instrument')
 
-while wait(10) do
+while wait(1) do
     if instrument:GetReading(2) < 4000 then
         TriggerPort(1)
     end
