@@ -1,5 +1,5 @@
 ---@diagnostic disable: undefined-global
-local starmap = GetPartFromPort(1, 'Starmap')
+local starmap = GetPartFromPort(1, 'StarMap')
 local telescope = GetPartFromPort(2, 'Telescope')
 local screen = GetPartFromPort(3, 'Screen')
 
@@ -9,7 +9,7 @@ screen:CreateElement('TextLabel', {
     Position = UDim2.fromScale(0.5, 0.5);
     Size = UDim2.fromScale(1, 1);
     --Text = 'Hello, world!';
-    Text = JSONEncode(starmap:GetBodies());
+    Text = JSONEncode(telescope:GetCoordinate(28, 84, 7, -6));
     TextSize = 20;
     TextScaled = false;
 })
